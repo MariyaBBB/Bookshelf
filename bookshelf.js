@@ -14,13 +14,15 @@ let bookshelf = function () {
             },
 
             list: function () {
-                for(let i=0; i<books.length; i++) {
-                    let book = books[i];
+                for(let book of books) {
                     console.log(`${book.name} (${book.author}) - ${book.price}р.`);
                 }
             }
     };
 }();
+bookshelf.add('Семейная жизнь весом 148 ф', 'Джон Ирвинг', 600);
+bookshelf.add('Последняя ночь у извилистой реки', 'Джон Ирвинг', 700);
+bookshelf.list();
 
 
 
