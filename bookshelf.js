@@ -11,8 +11,18 @@ let bookshelf = function () {
                 };
 
                 books.push(book);
+            },
+
+            list: function () {
+                for(let i=0; i<books.length; i++) {
+                    let book = books[i];
+                    console.log(`${book.name} (${book.author}) - ${book.price}р.`);
+                }
             }
     };
 }();
+
+
+
 
 
