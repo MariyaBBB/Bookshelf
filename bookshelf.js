@@ -25,9 +25,19 @@ let bookshelf = function () {
                     N++;
                 }
                 console.log(`Всего ${N} книг`);
+            },
+
+            total: function () {
+                let M=0;
+                for(let book of books) {
+                    M=M+book.price;
+                }
+                console.log(`Общая стоимость ${M}р.`)
             }
     };
 }();
+
+
 
 
 
