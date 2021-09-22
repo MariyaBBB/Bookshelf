@@ -33,6 +33,18 @@ let bookshelf = function () {
                     M=M+book.price;
                 }
                 console.log(`Общая стоимость ${M}р.`)
+            },
+
+            delete: function (name) {
+
+                for(let i=0; i<books.length; i++) {
+                    if (books[i].name == name)
+                    {
+                        books.splice(i,1);
+                    }
+                    else continue;
+                }
+
             }
     };
 }();
