@@ -20,34 +20,32 @@ let bookshelf = function () {
             },
 
             amount: function () {
-                let N = 0;
+                let n = 0;
                 for(let book of books) {
-                    N++;
+                    n++;
                 }
-                console.log(`Всего ${N} книг`);
+                console.log(`Всего ${n} книг`);
             },
 
             total: function () {
-                let M=0;
+                let m=0;
                 for(let book of books) {
-                    M=M+book.price;
+                    m=m+book.price;
                 }
-                console.log(`Общая стоимость ${M}р.`)
+                console.log(`Общая стоимость ${m}р.`)
             },
 
             delete: function (name) {
-
                 for(let i=0; i<books.length; i++) {
-                    if (books[i].name == name)
-                    {
+                    if (books[i].name == name) {
                         books.splice(i,1);
                     }
-                    else continue;
                 }
 
             }
     };
 }();
+
 
 
 
