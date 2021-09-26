@@ -26,20 +26,16 @@ let chocolate = function () {
             }
         },
 
-        amount: function(){
-            let n = 0;
-            for(let item of choco) {
-                n++;
-            }
-            console.log(`Всего ${n} шоколадок`);
+        count: function(){
+            console.log(`Всего ${choco.length} шоколадок`);
         },
 
         total: function () {
-            let m=0;
+            let price=0;
             for(let item of choco) {
-                m=m+item.price;
+                price=price+item.price;
             }
-            console.log(`Общая стоимость ${m}р.`)
+            console.log(`Общая стоимость ${price}р.`)
         },
 
         delete: function (name) {
@@ -50,7 +46,7 @@ let chocolate = function () {
             }
 
         },
-        amountType: function(){
+        countType: function(){
             let white = 0;
             let milk = 0;
             let dark = 0;
