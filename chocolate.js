@@ -50,6 +50,25 @@ let chocolate = function () {
             }
 
         },
+        amountType: function(){
+            let white = 0;
+            let milk = 0;
+            let dark = 0;
+            for(let item of choco) {
+                if(item.type === 'белый'){
+                    white++;
+                }
+                if(item.type === 'молочный') {
+                    milk++;
+                }
+                if(item.type === 'черный') {
+                    dark++;
+                }
+            }
+            console.log(`Всего ${white} белого шоколада`);
+            console.log(`Всего ${milk} молочного шоколада`);
+            console.log(`Всего ${dark} черного шоколада`);
+        },
 
     }
 }();
