@@ -41,6 +41,16 @@ let chocolate = function () {
             }
             console.log(`Общая стоимость ${m}р.`)
         },
+
+        delete: function (name) {
+            for(let i=0; i<choco.length; i++) {
+                if (choco[i].name === name) {
+                    choco.splice(i,1);
+                }
+            }
+
+        },
+
     }
 }();
 
