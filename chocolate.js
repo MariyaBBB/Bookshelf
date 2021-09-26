@@ -24,8 +24,17 @@ let chocolate = function () {
             for(let item of choco) {
                 console.log(`${item.name}, ${item.type} ${item.weight} грамм ${item.price}p.`);
             }
+        },
+
+        amount: function(){
+            let n = 0;
+            for(let item of choco) {
+                n++;
+            }
+            console.log(`Всего ${n} шоколадок`);
         }
     }
 }();
+
 
 
