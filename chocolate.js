@@ -4,8 +4,8 @@ let chocolate = function () {
     return {
         add: function(name, type, weight, price) {
             let availableType = ['белый', 'черный', 'молочный'];
-            let check = availableType.includes(type);
-            if (check === true)    {
+            let isTypeAvailable = availableType.includes(type);
+            if (isTypeAvailable === true)    {
                 let item = {
                     name: name,
                     type: type,

@@ -1,4 +1,4 @@
-# Bookshelf
+# Bookshelf & Chocolate
 
 Библиотека для работы с книжной полкой. Учебный пример.
 
@@ -23,9 +23,9 @@ chocolate.add('Ritter Sport со злаками','Vfhb', 75, 100);
 chocolate.add('Ritter Sport с лесными орехами','черный', 100, 130);
 chocolate.add('Ritter Sport с молочной начинкой','белый', 90, 140);
 chocolate.list();
-chocolate.amount();
+chocolate.count();
 chocolate.total();
 chocolate.delete('Ritter Sport со злаками');
 chocolate.list();
-chocolate.amountType();
+chocolate.countType();
 ```
