@@ -20,6 +20,11 @@ let chocolate = function () {
             
         },
 
+        list: function(){
+            for(let item of choco) {
+                console.log(`${item.name}, ${item.type} ${item.weight} грамм ${item.price}p.`);
+            }
+        }
     }
 }();
 
