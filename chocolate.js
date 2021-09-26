@@ -32,7 +32,15 @@ let chocolate = function () {
                 n++;
             }
             console.log(`Всего ${n} шоколадок`);
-        }
+        },
+
+        total: function () {
+            let m=0;
+            for(let item of choco) {
+                m=m+item.price;
+            }
+            console.log(`Общая стоимость ${m}р.`)
+        },
     }
 }();
 
